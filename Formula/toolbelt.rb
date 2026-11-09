@@ -9,26 +9,26 @@
 class Toolbelt < Formula
   desc "Requirements, supply and execution for a component's own build"
   homepage "https://github.com/ConnectedLabs/toolbelt"
-  version "0.1.0-rc.2"
+  version "0.1.1"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.0-rc.2/toolbelt-0.1.0-rc.2-darwin-arm64.tar.gz"
-      sha256 "80e3ac571f338211ab60bdef73375d6b152b7a7f8e392848534fb2e5a7dc794f"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.1/toolbelt-0.1.1-darwin-arm64.tar.gz"
+      sha256 "6bfc90a21ff20b3c89269aa21487fae7c9199c6e0d8ed17afc0e78e0b4a98280"
     else
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.0-rc.2/toolbelt-0.1.0-rc.2-darwin-amd64.tar.gz"
-      sha256 "b25734d56e9563cadaacd1c8e385229b239404b233456b6ffa4e4841a6df36b2"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.1/toolbelt-0.1.1-darwin-amd64.tar.gz"
+      sha256 "20f2167bcce168918434aea71f1fc619b4ba66a5c70c3d7173c4ff3bd4022fab"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.0-rc.2/toolbelt-0.1.0-rc.2-linux-arm64.tar.gz"
-      sha256 "6ef6bb9fc2de0c284ee609b11875872fc9a368a8fbf9f772d2449446842c419c"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.1/toolbelt-0.1.1-linux-arm64.tar.gz"
+      sha256 "25c983f75dce17d253a8e1e3df96a255f46ad0618cd385a9dd49f6f9a33ea509"
     else
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.0-rc.2/toolbelt-0.1.0-rc.2-linux-amd64.tar.gz"
-      sha256 "e0e69f84a3fbf522fd97acf8a90b38b8c92be5c0e1cb8ae808f8215ad10d962a"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.1/toolbelt-0.1.1-linux-amd64.tar.gz"
+      sha256 "786b2afb5bfbcc80134d794c35c5d1666d58c89ecd535d9db7df3f11b71c02d2"
     end
   end
 
@@ -41,7 +41,7 @@ class Toolbelt < Formula
         "provider_repository": "ConnectedLabs/internal-sdlc-tooling",
         "provider_ref": "feat/toolbelt",
         "operator": "ConnectedLabs",
-        "setup_access_probe": "ConnectedLabs/toolbelt/setup-access-probe@0b7a8093e6b5c513fdbaeb3dc02a442ad896d4c0 # toolbelt-v0.1.0-rc.2"
+        "setup_access_probe": "ConnectedLabs/toolbelt/setup-access-probe@19fbab8380bd9452ea2eb5355378d1c72f191107 # toolbelt-v0.1.1"
       }
     JSON
     (pkgshare/"sets").mkpath
