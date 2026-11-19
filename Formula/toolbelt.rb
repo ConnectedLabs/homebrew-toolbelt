@@ -9,26 +9,26 @@
 class Toolbelt < Formula
   desc "Requirements, supply and execution for a component's own build"
   homepage "https://github.com/ConnectedLabs/toolbelt"
-  version "0.1.2"
+  version "0.1.3"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.2/toolbelt-0.1.2-darwin-arm64.tar.gz"
-      sha256 "5f3ddc75be7a2837f83865ccfa68a9d5c08a67b736edf8aff655e8d3f9f75a7d"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.3/toolbelt-0.1.3-darwin-arm64.tar.gz"
+      sha256 "013388ef2e3e68241b73ceb4812f443186f24aa3896db40e6db99f4187fa1385"
     else
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.2/toolbelt-0.1.2-darwin-amd64.tar.gz"
-      sha256 "71b1f8ef45ad410e17fcc04071e8e7d529bae88d69ec46a7c581557ead59382b"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.3/toolbelt-0.1.3-darwin-amd64.tar.gz"
+      sha256 "c56b1fe9dfc8434e633b18040b03ccd55798f0ac33b4abb951e11655eeb516ca"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.2/toolbelt-0.1.2-linux-arm64.tar.gz"
-      sha256 "57b5006fda10fcc1010447b7096c7d4ddeb2b26db00d1d2d86e64dbf2a5ff06d"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.3/toolbelt-0.1.3-linux-arm64.tar.gz"
+      sha256 "efdc47bd078ea7667902a4824f2cc6aa8cafc54cacb0ec0f75a8b305d66fa3d0"
     else
-      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.2/toolbelt-0.1.2-linux-amd64.tar.gz"
-      sha256 "c4b508a38757a6d663605ee0bd8db1bd39b5909e3e246526857272868cde042a"
+      url "https://github.com/ConnectedLabs/toolbelt/releases/download/toolbelt-v0.1.3/toolbelt-0.1.3-linux-amd64.tar.gz"
+      sha256 "aa7fa7c11492437f707c19e564b7b363c93deed1c01ef850486d5e1ca98cc338"
     end
   end
 
@@ -39,9 +39,9 @@ class Toolbelt < Formula
       {
         "endpoint": "https://artifacts.pong.ai/repository/raw-dev/build-supply/",
         "provider_repository": "ConnectedLabs/internal-sdlc-tooling",
-        "provider_ref": "feat/toolbelt",
+        "provider_ref": "main",
         "operator": "ConnectedLabs",
-        "setup_access_probe": "ConnectedLabs/toolbelt/setup-access-probe@30d1365f047c43f4cc03c115b156068ff20758fa # toolbelt-v0.1.2"
+        "setup_access_probe": "ConnectedLabs/toolbelt/setup-access-probe@8d2786a45ac8092418c27e63ccd2be00c3cce0f3 # toolbelt-v0.1.3"
       }
     JSON
     (pkgshare/"sets").mkpath
